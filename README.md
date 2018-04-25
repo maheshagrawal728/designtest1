@@ -18,18 +18,20 @@ latest changes
 
 ## Buildin and Running APP from Command-line
 
- 1. Building:
+#### Building:
  - cd path_to_node/
  - npm install
      Description: Since package.json is present in the restapp directory.
      Above command will create a folder callled node_modules and
      Install all the dependencies required for the app.
- 2. Running:
+     
+#### Running:
  - Change server address if needed, which includes IP and PORT
  @path_to_node/conf/config.json, @path_to_node/public/lib/js/logic.js
  - npm start
  Use browser with server adderss provided to use the application i.e. http://10.52.76.120:3000/ or Use curl and other utilities.
- 3. Development:
+ 
+#### Development:
  - Modules installation: Install node modules using npm and save it in package.json. i.e.  npm install xx --save
  - Exposing Rest api: refer @path_to_node/controllers/example.js
  
@@ -43,14 +45,14 @@ TODO
 
 ## List of APIs Exposed
 
-1. API for login -- /users/login
-   Example: curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d '{ "user":"test", "pass":"test"}' http://10.52.76.120:3000/users/login
+#### API for login -- /users/login
+- Example: curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d '{ "user":"test", "pass":"test"}' http://10.52.76.120:3000/users/login
 
-2. API for signup -- /users/signup
-   Example: curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d '{ "user":"test", "pass":"test"}' http://10.52.76.120:3000/users/signup
+#### API for signup -- /users/signup
+- Example: curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d '{ "user":"test", "pass":"test"}' http://10.52.76.120:3000/users/signup
 
-3. API for loop test -- /loop
-   Example: curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d '{ "loopRunName":"testing","loopRunUser":"test", "loopRunPassword":"test"}' http://10.52.76.120:3000/loop
+#### API for loop test -- /loop
+- Example: curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d '{ "loopRunName":"testing","loopRunUser":"test", "loopRunPassword":"test"}' http://10.52.76.120:3000/loop
 
 
 
