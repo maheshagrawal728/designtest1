@@ -9,11 +9,8 @@ latest changes
 # Testing as a Service Nodejs Application
 
 ## Prerequisites
-
- 1. Need node and npm
- - [Refer:](https://nodejs.org/en/download/package-manager/)
- 
- 2. Docker installed and have access to loop/eust/goat docker image
+- Need node and npm. [(Refer)](https://nodejs.org/en/download/package-manager/)
+- Docker installed and have access to loop/eust/goat docker image
 
 ## Instructions for Command-line
 
@@ -34,25 +31,19 @@ latest changes
  - Modules installation: Install node modules using npm and save it in package.json. i.e.  npm install xx --save
  - Exposing Rest api: refer @path_to_node/controllers/example.js
 
-
-#### List of APIs Exposed
-
-##### API for login -- /users/login
-- Example: curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d '{ "user":"test", "pass":"test"}' http://10.52.76.120:3000/users/login
-
-##### API for signup -- /users/signup
-- Example: curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d '{ "user":"test", "pass":"test"}' http://10.52.76.120:3000/users/signup
-
-##### API for loop test -- /loop
-- Example: curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d '{ "loopRunName":"testing","loopRunUser":"test", "loopRunPassword":"test"}' http://10.52.76.120:3000/loop
-
  
 ## Instructions for Eclipse
-
-TODO
+To be done.
 
 ## Instructions for Intellij
+To be done.
 
-TODO
+## List of APIs Exposed
+#### API for login -- /users/login
+- Example: curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d '{ "user":"test", "pass":"test"}' http://10.52.76.120:3000/users/login
 
+#### API for signup -- /users/signup
+- Example: curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d '{ "user":"test", "pass":"test"}' http://10.52.76.120:3000/users/signup
 
+#### API for loop test -- /loop
+- Example: curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d '{ "loopRunName":"testing","loopRunUser":"test", "loopRunPassword":"test"}' http://10.52.76.120:3000/loop
