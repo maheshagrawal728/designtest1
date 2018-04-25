@@ -14,8 +14,8 @@ A containerized and distributed Testing as a service application for VMC product
 - Need node and npm. [(Refer)](https://nodejs.org/en/download/package-manager/)
 - Docker installed and have access to loop/eust/goat docker image
 
-### Instructions for Command-line
 
+### Instructions for Command-line
 #### Building:
  - cd path_to_node/
  - npm install
@@ -33,12 +33,14 @@ A containerized and distributed Testing as a service application for VMC product
  - Modules installation: Install node modules using npm and save it in package.json. i.e.  npm install xx --save
  - Exposing Rest api: refer @path_to_node/controllers/example.js
 
- 
+
 ### Instructions for Eclipse
 To be done.
 
+
 ### Instructions for Intellij
 To be done.
+
 
 ### List of APIs Exposed
 #### API for login -- /users/login
