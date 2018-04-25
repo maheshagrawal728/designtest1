@@ -7,6 +7,7 @@ latest changes
 
 
 # Testing as a Service Nodejs Application
+A containerized and distributed Testing as a service application for VMC product
 
 ## Prerequisites
 - Need node and npm. [(Refer)](https://nodejs.org/en/download/package-manager/)
