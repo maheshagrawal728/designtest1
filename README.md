@@ -11,12 +11,11 @@ latest changes
 ## Prerequisites
 
  1. Need node and npm
- 
- [Refer:](https://nodejs.org/en/download/package-manager/)
+ - [Refer:](https://nodejs.org/en/download/package-manager/)
  
  2. Docker installed and have access to loop/eust/goat docker image
 
-## Buildin and Running APP from Command-line
+## Instructions for Command-line
 
 #### Building:
  - cd path_to_node/
@@ -34,25 +33,26 @@ latest changes
 #### Development:
  - Modules installation: Install node modules using npm and save it in package.json. i.e.  npm install xx --save
  - Exposing Rest api: refer @path_to_node/controllers/example.js
- 
-## Buildin and Running APP from Eclipse
 
-TODO
 
-## Buildin and Running APP from Intellij
+#### List of APIs Exposed
 
-TODO
-
-## List of APIs Exposed
-
-#### API for login -- /users/login
+##### API for login -- /users/login
 - Example: curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d '{ "user":"test", "pass":"test"}' http://10.52.76.120:3000/users/login
 
-#### API for signup -- /users/signup
+##### API for signup -- /users/signup
 - Example: curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d '{ "user":"test", "pass":"test"}' http://10.52.76.120:3000/users/signup
 
-#### API for loop test -- /loop
+##### API for loop test -- /loop
 - Example: curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d '{ "loopRunName":"testing","loopRunUser":"test", "loopRunPassword":"test"}' http://10.52.76.120:3000/loop
 
+ 
+## Instructions for Eclipse
+
+TODO
+
+## Instructions for Intellij
+
+TODO
 
 
