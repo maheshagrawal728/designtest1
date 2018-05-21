@@ -6,13 +6,13 @@ A containerized and distributed Testing as a service application for VMC product
 - Install git
 - Cloining the repo:
 	Please follow the steps below to setup an SSH key for your Stash account:
-		1. Generate an SSH key on your local machine [(Refer SSH keys section)](https://wiki.eng.vmware.com/Build/DBC)
-		2. In Stash, click your user icon in the top right corner and then click on Manage Account
-		3. Click on the SSH keys link on the left and then click on the Add key button
-		4. Copy and paste the public key (which is usually in the file ~/.ssh/id_rsa.pub) that you generated in step 1 and then click on Add key
-		5. Change into your development directory, and clone the remote Git repository by running the command below:
-		$ git clone ssh://git@stash.eng.vmware.com:7999/ss/eust.git
-		https://stash.eng.vmware.com/stash/projects/SS/repos/eust/browse
+	- Generate an SSH key on your local machine [(Refer SSH keys section)](https://wiki.eng.vmware.com/Build/DBC)
+	- In Stash, click your user icon in the top right corner and then click on Manage Account
+	- Click on the SSH keys link on the left and then click on the Add key button
+	- Copy and paste the public key (which is usually in the file ~/.ssh/id_rsa.pub) that you generated in step 1 and then click on Add key
+	- Change into your development directory, and clone the remote Git repository by running the command below:
+	- $ git clone ssh://git@stash.eng.vmware.com:7999/ss/eust.git
+	- https://stash.eng.vmware.com/stash/projects/SS/repos/eust/browse
 
 
 - Install databse mysql:
@@ -26,17 +26,17 @@ A containerized and distributed Testing as a service application for VMC product
 
 	- Edit mysql config file to allow all traffic.
 	- mysql --help, look for my.cnf file location and edit the file with below details:
-			bind-address=*
-			Comment line skip-networking
-			restart the service.
-			location of the condif file: /etc/my.cnf /etc/mysql/my.cnf /usr/local/etc/my.cnf ~/.my.cnf 
+		- bind-address=*
+		- Comment line skip-networking
+		- restart the service.
+		- location of the condif file: /etc/my.cnf /etc/mysql/my.cnf /usr/local/etc/my.cnf ~/.my.cnf 
 
 - Need node and npm. [(Refer)](https://nodejs.org/en/download/package-manager/)
 - Docker installed and have access to loop/eust/goat docker image
 - If docker Image not available build them:
 	- Build: 
-    	cd PATH/eust/docker/goat, docker build -t docker-goat-image .
-    	cd PATH/eust/docker/eust, docker build -t docker-eust-image .
+    		- cd PATH/eust/docker/goat, docker build -t docker-goat-image .
+    		- cd PATH/eust/docker/eust, docker build -t docker-eust-image .
 
 
 ## Instructions for Command-line
