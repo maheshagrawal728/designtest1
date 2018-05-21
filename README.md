@@ -11,8 +11,7 @@ A containerized and distributed Testing as a service application for VMC product
 	- Click on the SSH keys link on the left and then click on the Add key button
 	- Copy and paste the public key (which is usually in the file ~/.ssh/id_rsa.pub) that you generated in step 1 and then click on Add key
 	- Change into your development directory, and clone the remote Git repository by running the command below:
-	- $ git clone ssh://git@stash.eng.vmware.com:7999/ss/eust.git
-	- https://stash.eng.vmware.com/stash/projects/SS/repos/eust/browse
+	- git clone ssh://git@stash.eng.vmware.com:7999/ss/eust.git  [(Repo Link)](https://stash.eng.vmware.com/stash/projects/SS/repos/eust/browse)
 
 
 - Install databse mysql:
@@ -33,10 +32,10 @@ A containerized and distributed Testing as a service application for VMC product
 
 - Need node and npm. [(Refer)](https://nodejs.org/en/download/package-manager/)
 - Docker installed and have access to loop/eust/goat docker image
-- If docker Image not available build them:
-	- Build: 
-    		- cd PATH/eust/docker/goat, docker build -t docker-goat-image .
-    		- cd PATH/eust/docker/eust, docker build -t docker-eust-image .
+	- If docker Image not available build them:
+		- Build: 
+    			- cd PATH/eust/docker/goat, docker build -t docker-goat-image .
+    			- cd PATH/eust/docker/eust, docker build -t docker-eust-image .
 
 
 ## Instructions for Command-line
