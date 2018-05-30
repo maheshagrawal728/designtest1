@@ -1,10 +1,10 @@
 VMC INTERNAL SRE
 ================
-This cli is meant to support and remediate issues for internal vmc customers and directed towards making the internal-sre a self service process.
-
-It will have the capabilities listed in the following confluence- https://confluence.eng.vmware.com/pages/viewpage.action?spaceKey=DRMTEAM&title=VMC+Reaper+CLI
+This cli is meant to support and remediate issues for internal vmc customers and directed towards making the internal-sre a self service process. 
+It will have the capabilities listed in the following confluence-
+https://confluence.eng.vmware.com/pages/viewpage.action?spaceKey=DRMTEAM&title=VMC+Reaper+CLI
  
-Build & Run (Note: Following installation instructions are for Mac OS X having bash shell and Homebrew.)
+Build & Run (Following installation instructions are for Mac OS X having bash shell and Homebrew.)
 -----------
 Please follow the steps below to clone stash based project and setup an SSH key for your account::
 
@@ -30,7 +30,6 @@ Please run follwing command to install cli dependencies and activate it in the c
 Please run follwing command to manually activate cli in another terminal::
 
     cd PATH_TO-CLI/vmc-internal-sre/
-
     source activate-cli.sh
 
 
