@@ -4,9 +4,9 @@ This cli is meant to support and remediate issues for internal vmc customers and
 It will have the capabilities listed in the following confluence-
 https://confluence.eng.vmware.com/pages/viewpage.action?spaceKey=DRMTEAM&title=VMC+Reaper+CLI
  
-Build & Run ( Note: Installation instructions are for Mac OS X having bash shell and Homebrew. )
+Build & Run (Note: Installation instructions are for Mac OS X having bash shell and Homebrew)
 -----------
-Please follow the steps below to clone stash based project and setup an SSH key for your account::
+Please follow the steps below to clone stash based project using SSH::
 
     1. Generate an SSH key on your local machine (https://confluence.atlassian.com/bitbucketserver/creating-ssh-keys-776639788.html)
 
@@ -21,24 +21,29 @@ Please follow the steps below to clone stash based project and setup an SSH key 
     git clone ssh://git@stash.eng.vmware.com:7999/ss/vmc-internal-sre.git
 
 
-Please run follwing command to install cli dependencies and activate it in the current terminal::
+Please follow the steps below to clone stash based project using HTTPS::
 
-    cd PATH_TO-CLI/vmc-internal-sre/
+    git clone https://username@stash.eng.vmware.com/stash/scm/ss/vmc-internal-sre.git
+
+
+Please run following command to install cli dependencies and activate it in the current terminal::
+
+    cd PATH_TO_CLI/vmc-internal-sre/
     source init-cli.sh
 
 
-Please run follwing command to manually activate cli in another terminal::
+Please run following command to manually activate cli in another terminal::
 
-    cd PATH_TO-CLI/vmc-internal-sre/
+    cd PATH_TO_CLI/vmc-internal-sre/
     source activate-cli.sh
 
 
-Please run follwing command to deactivate cli in current terminal::
+Please run following command to deactivate cli in current terminal::
 
     pyenv deactivate
 
 
-Please run follwing command to uninstall or delete cli from the system::
+Please run following command to uninstall or delete cli from the system::
 
     pyenv uninstall isre
 
@@ -46,6 +51,7 @@ Please run follwing command to uninstall or delete cli from the system::
 If you'd like to run all tests for this project, you would run the following command::
 
     python setup.py test
+
 
 
 
