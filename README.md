@@ -11,7 +11,7 @@ A containerized and distributed Testing as a service application for VMC product
 
 
 ## Prerequisites
-- Need node and npm. [alt !Refer](https://nodejs.org/en/download/package-manager/)
+- Need node and npm. ![alt Refer](https://nodejs.org/en/download/package-manager/)
 - Docker installed and have access to loop/eust/goat docker image
 
 
